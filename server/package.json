@@ -1,0 +1,23 @@
+{
+  "name": "node_http_smple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dbsample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawanishi9726/node_http_smple.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kawanishi9726/node_http_smple/issues"
+  },
+  "homepage": "https://github.com/kawanishi9726/node_http_smple#readme",
+  "dependencies": {
+    "nedb": "^1.8.0"
+  }
+}

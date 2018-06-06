@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "webアラート",
+    "version": "1.0",
+
+    // 拡張機能ページ(chrome://extensions/)などでの設定
+    "description": "webアラート", // 拡張機能の説明
+    //"icons": { // 拡張機能のアイコンの指定
+    //    "16": "icon16.png",
+    //    "48": "icon48.png",
+    //    "128": "icon128.png"
+    //},
+
+    // browser actionの設定
+    "browser_action": {
+    //    "default_icon": { // browser actionで使用するアイコンの指定
+    //        "19": "icon19.png",
+    //        "38": "icon38.png"
+    //    },
+        "default_title": "webアラート", // browser actionのアイコンにオンマウスした時のツールチップ
+        "default_popup" : "popup.html"
+
+    },
+
+    // backgroundで実行しておくファイル
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    // 権限の設定
+    "permissions": [
+        "alarms",
+        "notifications",
+        "http://*/*",
+        "https://*/*"
+    ]
+}
